@@ -44,6 +44,7 @@ The system should:
 ### Bonus Points:
 - Visualize historical data in a user-friendly format (e.g., a table or chart).
 - Document the API endpoints using OpenAPI/Swagger or an equivalent tool.
+- Unit tests.
 
 ---
 
