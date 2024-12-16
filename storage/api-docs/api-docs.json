@@ -1,0 +1,54 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Dashboard API",
+        "version": "1.0"
+    },
+    "paths": {
+        "/api/prices/current-hour": {
+            "get": {
+                "operationId": "3ba4fd40a7e69108bb47e347ab2773c0",
+                "responses": {
+                    "200": {
+                        "description": "Get curent hour price"
+                    },
+                    "404": {
+                        "description": "Price not found"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/api/prices/next-hour": {
+            "get": {
+                "operationId": "990775e48390367dca40c5215a343faa",
+                "responses": {
+                    "200": {
+                        "description": "Get next hour price"
+                    },
+                    "404": {
+                        "description": "Price not found"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "bearerAuth": {
+                "type": "http",
+                "bearerFormat": "JWT",
+                "scheme": "bearer"
+            }
+        }
+    }
+}
